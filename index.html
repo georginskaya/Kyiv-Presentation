@@ -33,7 +33,7 @@
         box-sizing: border-box;
 
 
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 200;
     }
 
@@ -439,6 +439,8 @@ dorka_danceandtravel
         padding-top: 40px;
         text-align: justify;
         padding: 30px;
+        margin-left: 10px;
+        margin-right: 40px;
     }
 
     .about h2 {
@@ -523,8 +525,12 @@ dorka_danceandtravel
         padding-top: 59px;
     }
 
+    a {
+        color: #390057;
+    }
+
     .icon {
-        border: 1px solid white;
+        border: 1px solid var(--font-color);
         padding: 20px;
         margin-left: 20px;
         border-radius: 300px
@@ -547,6 +553,33 @@ dorka_danceandtravel
         border-radius: 10px;
         background-color: rgb(13, 97, 34);
         color: white;
+    }
+
+    .in_the_shelter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 90px;
+        padding-right: 90px;
+        /* font-weight: 400; */
+        font-size: 23px;
+        background-color: rgb(13, 97, 34);
+        color: white;
+        font-family: 'Gill Sans',
+            'Gill Sans MT',
+            Calibri,
+            'Trebuchet MS',
+            sans-serif;
+
+    }
+
+    .contact {
+        padding-left: 40px;
+        padding-right: 10px;
     }
 
 
@@ -584,7 +617,7 @@ dorka_danceandtravel
 
         <h1 class="titel">Switch to see how the lives of Ukrainins have changed after
             Russia's full-scale invasion</h1>
-        <div class="theme-switcher " id="anchor_arrow">
+        <div class="theme-switcher ">
 
             <input type="checkbox" id="switcher" />
 
@@ -610,7 +643,7 @@ dorka_danceandtravel
         </div>
         <div class="panel panel2">
             <p></p>
-            <p>Ukraine</p>
+            <p>Kyiv</p>
             <p></p>
         </div>
         <div class="panel panel3">
@@ -636,7 +669,7 @@ dorka_danceandtravel
         <div class="row kyivinfo">
 
             <div class="col-md peaceful_kyiv">
-                <div class="kyiv1">
+                <div class="kyiv1" id="anchor_arrow">
                     <h2 class="kyiv_titel">Explore peaceful Kyiv and its history</h2>
 
                     <p>Kyiv (#notKiev!) - the city that is more than 1500 year old
@@ -686,6 +719,10 @@ dorka_danceandtravel
 
                     </div>
                 </div>
+
+                <div>
+
+                </div>
             </div>
 
             <div class="col-md">
@@ -728,6 +765,26 @@ dorka_danceandtravel
                     </div>
                 </div>
             </div>
+
+        </div>
+        <div class="row in_the_shelter">
+            <div class="col-md">
+                <p class="life_goes_on">
+                    Life goes on even during the war.</br> In the basements and subway stations in Kyiv (that were made
+                    to
+                    shelters during the
+                    russian missiles) babies are being born, lessons are being given to the school students, and
+                    Ukrainians are signing
+                    traditional songs to keep morale up. 😎
+                </p>
+            </div>
+            <div class="col-md">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/UtgkBbgdjfo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
 
         </div>
         <h1 class="ukr_art">Explore some Ukrainian Art</h1>
@@ -1037,9 +1094,9 @@ dorka_danceandtravel
                 </div>
 
 
-                <div class=" about">
+                <div class="about">
                     <div class="row">
-                        <div id="anchor_question" class="col-sm">
+                        <div id="anchor_question" class="col-md contact">
 
                             <h2>What is </br>going on here?</h2>
                             <p>
@@ -1050,32 +1107,30 @@ dorka_danceandtravel
                                 entire Ukraine.</p>
                             <p> Even if one person learns more about what is happening in my home country and takes one
                                 small step towards helping us
-                                end the war, I will consider this goal accomplished. 🙂 </p>
+                                end the war, I will consider this goal accomplished. </p>
 
-                            <p> If you have anything to say (about the topic of the website or any other topic) or have
-                                any questions, feel free to
-                                contact me through the links provided here. </p>
+
 
                         </div>
-                        <div class="col-sm">
+                        <div class="col-md contact">
                             <h2>Contact </br> Me</h2>
-                            <p>t is a long established fact that a reader will be distracted by the readable content
-                                of
-                                a
-                                page when
-                                looking at its
-                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                                distribution
-                            </p>
+                            <p> Feel free to
+                                contact me if you have any questions (or simply to say "hi") through the links provided
+                                here. </p>
                             <div class="reach_out" id="contact">
                                 <div class="icons_row row">
                                     <div class="cl-4">
-
-                                        <i class="fa-regular fa-envelope icon"></i>
+                                        <a href="mailto:georginskaya@gmail.com?subject=Reaching out from your Website">
+                                            <i class="fa-regular fa-envelope icon"></i></a>
                                     </div>
                                     <div class="cl-4">
-                                        <a href="https://www.linkedin.com/in/yevhenhavrylenko/">
+                                        <a href="https://www.linkedin.com/in/olena-heorhinska-3b4b33137/">
                                             <i class="fa-brands fa-linkedin-in icon"></i></a>
+
+                                    </div>
+                                    <div class="cl-4">
+                                        <a href="https://github.com/georginskaya">
+                                            <i class="fa-brands fa-github icon"></i></a>
 
                                     </div>
                                 </div>
